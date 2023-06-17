@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import Perfil from '../components/Perfil.astro';
+import About from '../components/About.astro';
+import Skills from '../components/Skills.astro';
+import Portfolio from '../components/Portfolio.astro';
+import Contact from '../components/Contact.astro';
+---
+
+<Layout title="Juanppdev | Portfolio">
+	<main>
+	
+	  <section class="box perfil bg-gray-700" id="perfil">
+	    
+	    <Perfil/>
+	    
+	   </section>
+	   <section class="box bg-gray-800 h-auto md:h-[450px]" id="about">
+	   
+	    <About/>
+	    
+	   </section>
+	   <section class="box h-auto bg-gray-700 md:h-auto" id="skills">
+	   
+	    <Skills/>
+	    
+	   </section>
+	   <section class="box h-auto bg-gray-800 md:h-auto" id="portfolio">
+	    
+	    <Portfolio/>
+	    
+	   </section>
+	   <section class="box bg-gray-700 h-auto" id="contact">
+	   
+	    <Contact/>
+	    
+	   </section>
+	</main>
+</Layout>
