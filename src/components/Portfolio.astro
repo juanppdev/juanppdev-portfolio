@@ -4,9 +4,10 @@ const data = await response.json();
 const repositories = Array.isArray(data) ? data : []; // Verificar si data es un array
 //console.log(repositories )
 const RepoNames = repositories.map(git => git.name);
+const ACCESSTOKEN = import.meta.env.ACCESSTOKEN;
 
 // api Graphql Github
-const accessToken = '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';
+const accessToken = ACCESSTOKEN;
 
 const repositoriesWithImages = await Promise.all(
   repositories
