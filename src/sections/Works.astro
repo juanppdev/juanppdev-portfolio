@@ -29,10 +29,11 @@ const repositoriesWithImages = await Promise.all(
           
         },
       });
-      const datos = await apiGraph.json();
-      const GitImage = datos.data.repository.openGraphImageUrl || ''; // Manejo si openGraphImageUrl es undefined
+      // const datos = await apiGraph.json();
+      // console.log(datos)
+      // const GitImage = datos.data.repository.openGraphImageUrl || ''; // Manejo si openGraphImageUrl es undefined
 
-      return { ...repo, GitImage };
+      return { ...repo};
     })
 );
 ---
