@@ -18,6 +18,9 @@ jobs:
           node-version: 18
 
       - name: Run Script
+        run: npm install
+
+      - name: build
         run: npm run build
 
       - name: Commit Push
