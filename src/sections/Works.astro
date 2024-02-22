@@ -30,7 +30,7 @@ const repositoriesWithImages = await Promise.all(
         },
       });
       const datos = await apiGraph.json();
-      const GitImage = datos.data.repository.openGraphImageUrl || ''; // Manejo si openGraphImageUrl es undefined
+      const GitImage = (datos.data.repository && datos.data.repository.openGraphImageUrl) || ''; // Manejo si openGraphImageUrl es undefined
 
       return { ...repo, GitImage };
     })
