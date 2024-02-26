@@ -1,0 +1,15 @@
+---
+const { icon, text } = Astro.props
+---
+
+
+
+    <div class="max-w-xsm m-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="flex flex-col items-center p-5">
+            <svg class=" w-12 h-12 text-gray-800 dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d={icon}/>
+              </svg>
+            <h1 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">{text}</h1>
+        </div>
+    </div>
+      
