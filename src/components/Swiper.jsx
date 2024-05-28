@@ -50,7 +50,7 @@ export default function Fswiper() {
                 slidesPerView: 2
               },
             1024: {
-              slidesPerView: 2
+              slidesPerView: 3
             },
           }}
         modules={[FreeMode, Navigation]}
@@ -62,29 +62,28 @@ export default function Fswiper() {
                 <div className="group relative">
                     <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
                         <img
-                            src="/placeholder.svg"
-                            alt="AWS Certified Solutions Architect"
+                            src="/img/certifications/JetpackCompose.png"
+                            alt="Jetpack Compose: Curso definitivo"
                             className="h-full aspect-video object-center object-cover"
-                            width="320"
-                            height="320"
+                            width="auto"
+                            height="auto"
                         />
                     </div>
                     <div className="mt-4 flex justify-between">
                         <div>
                             <h3 className="text-sm text-gray-700">
-                                <a href="#">
                                     <span aria-hidden="true" class="absolute inset-0"></span>
-                                        AWS Certified Solutions Architect
-                                </a>
+                                        Jetpack Compose: Curso definitivo
                             </h3>
-                            <p className="mt-1 text-sm text-gray-500">Issued by Amazon Web Services</p>
+                            <p className="mt-1 text-sm text-gray-500">Hecho en la plataforma de Appcademy</p>
                         </div>
                     </div>
                 </div>
             </div>
 
         </SwiperSlide>
-        <SwiperSlide>
+
+        {/*<SwiperSlide>
 
             <div className="w-full bg-white">
                 <div className="group relative">
@@ -279,7 +278,7 @@ export default function Fswiper() {
                 </div>
             </div>
 
-        </SwiperSlide>
+        </SwiperSlide>*/}
       </Swiper>
         </>
     )
